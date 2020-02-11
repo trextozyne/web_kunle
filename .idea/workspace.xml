@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6bb1b33-3ecc-459a-80af-83ef201ac343" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,20 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="130" column="25" selection-start-line="130" selection-start-column="25" selection-end-line="130" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="354">
+              <caret line="655" column="67" selection-start-line="655" selection-start-column="67" selection-end-line="655" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -115,6 +105,8 @@
       <find>30px</find>
       <find>card__text</find>
       <find>consol</find>
+      <find>stackDiv1</find>
+      <find>followTo</find>
     </findStrings>
     <replaceStrings>
       <replace>img src=&quot;</replace>
@@ -125,6 +117,7 @@
       <replace>mbr-black</replace>
       <replace>400</replace>
       <replace>fixed</replace>
+      <replace>mobileRearrange</replace>
     </replaceStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -159,9 +152,9 @@
         <option value="$PROJECT_DIR$/../kunle web Index Concepts/index.html" />
         <option value="$PROJECT_DIR$/assets/mobirise/css/mbr-additional.css" />
         <option value="$PROJECT_DIR$/assets/mobirise/css/mbr-additional1.css" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/Proctfile" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
       </list>
     </option>
   </component>
@@ -290,12 +283,27 @@
       <workItem from="1580324565454" duration="10635000" />
       <workItem from="1580433955979" duration="183000" />
       <workItem from="1580434278393" duration="112640000" />
-      <workItem from="1581163946485" duration="1044000" />
+      <workItem from="1581163946485" duration="13958000" />
     </task>
+    <task id="LOCAL-00001" summary="added npm start">
+      <created>1581194297605</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581194297606</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added npm">
+      <created>1581455400591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581455400591</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124502000" />
+    <option name="totallyTimeSpent" value="137416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="744" extended-state="6" />
@@ -328,6 +336,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added npm start" />
+    <MESSAGE value="added npm" />
+    <option name="LAST_COMMIT_MESSAGE" value="added npm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -557,17 +570,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="130" column="25" selection-start-line="130" selection-start-column="25" selection-end-line="130" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="655" column="67" selection-start-line="655" selection-start-column="67" selection-end-line="655" selection-end-column="67" />
         </state>
       </provider>
     </entry>
