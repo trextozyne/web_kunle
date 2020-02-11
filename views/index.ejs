@@ -190,6 +190,23 @@
             top: 0;
             left: 0;
         }
+
+        /* Smartphones (portrait and landscape) ----------- */
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px) {
+            /* STYLES GO HERE */
+            .item--primary {
+                width: 100%;
+            }
+            .item--secondary {
+                width: 100%;
+            }
+
+            #phone-section{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -291,7 +308,7 @@
     <div class="selector" data-anchor="footer2-9"></div>
 </div>
 
-<section class="item screensize item--secondary"
+<section id="stackMobileDiv1" class="item screensize item--secondary"
      data-aos="fade-up"
      data-aos-anchor="#trigger-left"
      data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-mirror="true">
@@ -303,20 +320,20 @@
     </div>
 </section>
 
-<section class="item screensize item--primary"
+<section id="stackMobileDiv2" class="item screensize item--primary"
      data-aos="fade-left"
      data-aos-anchor="#trigger-left"
      data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-mirror="true">
         <img class="img" src="/images/cards/waec_checker.jpg" alt="" title="">
 </section>
-<section class="item screensize item--secondary"
+<section id="stackMobileDiv3" class="item screensize item--secondary"
      data-aos="fade-down"
      data-aos-anchor="#trigger-center"
      data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-mirror="true">
     <img class="img" src="/images/cards/neco_cheker.jpg" alt="" title="">
 </section>
 
-<section class="item screensize item--primary"
+<section id="stackMobileDiv4" class="item screensize item--primary"
      data-aos="fade-up"
      data-aos-anchor="#trigger-center"
      data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-mirror="true">
@@ -599,6 +616,43 @@
         console.dir(detail);
     });
 
+    window.onresize = function (event) {
+        applyOrientation();
+    };
+
+    function applyOrientation() {
+        if (window.innerHeight < window.innerWidth) {//landscape
+
+        } else {//portrait
+            let triggerLeftTop = $('#trigger-left').offset().top;
+            let triggerLeftBtm = $('#trigger-left').offset().bottom;
+            let triggerCenter = $('#trigger-center').offset().top;
+            let triggerRight = $('#trigger-right').offset().top;
+            let stackMobileDiv1 = $('#stackMobileDiv1').offset().top;
+            let stackMobileDiv2 = $('#stackMobileDiv2').offset().top;
+            let HeaderTop = $('#header9-3').offset().top - 625;
+            let service1Top = $('#trigger-services-left').offset().top;
+            let service2Top = $('#trigger-services-right').offset().top+500;
+            let formTop = $('#trigger-form').offset().top+200;
+
+            // $('#phone-section').followTo(HeaderTop);
+            $('#stackMobileDiv1').followTo(triggerLeftTop);
+            $('#stackMobileDiv2').followTo(triggerLeftTop+250);
+            $('#stackMobileDiv3').followTo(triggerCenter);
+            $('#stackMobileDiv4').followTo(triggerCenter+250);
+            $('#stackDiv1').followTo(HeaderTop);
+            $('#stackDiv2').followTo(HeaderTop+250);
+            $('#pricing2-7').followTo(service1Top);
+            $('#pricing2-8').followTo(service2Top);
+            $('#contacts4-d').followTo(formTop);
+            // if (window.innerHeight < window.innerWidth) {
+            //
+            // } else {
+            //
+            // }
+        }
+    }
+
     $.fn.followTo = function (pos) {
         var $this = this,
             $window = $(window);
@@ -607,7 +661,8 @@
             if ($window.scrollTop() > pos) {
                 $this.css({
                     position: 'absolute',
-                    top: pos
+                    top: pos,
+                    // "z-index":100
                 });
             } else {
                 $this.css({
@@ -618,17 +673,22 @@
         });
     };
 
+    //====start animation scroll to====
+    function animateScrollTo() {
         let HeaderTop = $('#header9-3').offset().top - 625;
-    let service1Top = $('#trigger-services-left').offset().top;
-    let service2Top = $('#trigger-services-right').offset().top+500;
-    let formTop = $('#trigger-form').offset().top+200;
+        let service1Top = $('#trigger-services-left').offset().top;
+        let service2Top = $('#trigger-services-right').offset().top+500;
+        let formTop = $('#trigger-form').offset().top+200;
 
-    $('#phone-section').followTo(HeaderTop);
-    $('#stackDiv1').followTo(HeaderTop);
-    $('#stackDiv2').followTo(HeaderTop);
-    $('#pricing2-7').followTo(service1Top);
-    $('#pricing2-8').followTo(service2Top);
-    $('#contacts4-d').followTo(formTop);
+        $('#phone-section').followTo(HeaderTop);
+        $('#stackDiv1').followTo(HeaderTop);
+        $('#stackDiv2').followTo(HeaderTop);
+        $('#pricing2-7').followTo(service1Top);
+        $('#pricing2-8').followTo(service2Top);
+        $('#contacts4-d').followTo(formTop);
+    }
+
+    animateScrollTo()
 
     var mouse_position;
     var animating = false;
@@ -676,6 +736,7 @@
         $(".selector").removeClass("active");
         $(this).toggleClass("active");
     });
+
 
     $(document).ready(function(){
         let getscrolledId = null;
