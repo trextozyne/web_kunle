@@ -206,14 +206,29 @@
             .screensize {
                 height: 225px;
             }
+            .item {
+                height: 230px;
+            }
+            #trigger-services-left {
+                height: 700px !important;
+                max-height: 3500px;
+            }
+            #trigger-services-right {
+                height: 1000px !important;
+                max-height: 3500px;
+            }
+            #trigger-form {
+                height: 800px !important;
+                max-height: 3500px;
+            }
         }
         @media screen and (max-device-width : 480px) {/*only screen*/
             /* STYLES GO HERE */
             .item--primary {
-                width: 100%;
+                width: 50%;
             }
             .item--secondary {
-                width: 100%;
+                width: 50%;
             }
             #phone-section{
                 display: none;
@@ -643,7 +658,7 @@
             let triggerCenter = $('#trigger-center').offset().top;
             let triggerRight = $('#trigger-right').offset().top;
             let HeaderTop = $('#header9-3').offset().top - 625;
-            let service1Top = $('#trigger-services-left').offset().top;
+            let service1Top = $('#trigger-services-left').offset().top-180;
             let service2Top = $('#trigger-services-right').offset().top+500;
             let formTop = $('#trigger-form').offset().top+200;
 
@@ -655,7 +670,7 @@
             $('#stackMobileDiv5').mobileRearrange(triggerLeftTop+(4*230));
             $('#stackMobileDiv6').mobileRearrange(triggerLeftTop+(5*230));
             $('#pricing2-7').mobileRearrange(service1Top);
-            $('#pricing2-8').mobileRearrange(service2Top);
+            $('#pricing2-8').mobileRearrange(service2Top+ 160);
             $('#contacts4-d').mobileRearrange(formTop);
             // if (window.innerHeight < window.innerWidth) {
             //
@@ -703,7 +718,7 @@
 
         if(window.innerWidth > 1024) {
             let HeaderTop = $('#header9-3').offset().top - 625;
-            let service1Top = $('#trigger-services-left').offset().top;
+            let service1Top = $('#trigger-services-left').offset().top+200;
             let service2Top = $('#trigger-services-right').offset().top + 500;
             let formTop = $('#trigger-form').offset().top + 200;
 
@@ -711,7 +726,7 @@
             $('#stackMobileDiv5').followTo(HeaderTop);
             $('#stackMobileDiv6').followTo(HeaderTop);
             $('#pricing2-7').followTo(service1Top);
-            $('#pricing2-8').followTo(service2Top);
+            $('#pricing2-8').followTo(service1Top+1600);
             $('#contacts4-d').followTo(formTop);
         }
     }
