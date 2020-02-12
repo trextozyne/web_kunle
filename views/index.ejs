@@ -192,7 +192,7 @@
         }
 
         /* Smartphones (portrait and landscape) ----------- */
-        @media screen and (min-device-width : 320px) {/*only screen*/
+        @media only screen and (min-device-width : 320px) {/*only screen*/
             /* STYLES GO HERE */
             .item--primary {
                 width: 100%;
@@ -652,7 +652,13 @@
     function applyOrientation() {debugger;
         if (window.innerHeight < window.innerWidth) {//landscape
 
-        } else {//portrait
+        } else {//portraite
+            let element = document.querySelectorAll('.item');
+            element.forEach((el, i)=> {
+                if (el.getAttribute('data-aos-mirror'))
+                    el.setAttribute('data-aos-mirror', 'false');
+            })
+
             let triggerLeftTop = $('#trigger-left').offset().top;
             let triggerLeftBtm = $('#trigger-left').offset().bottom;
             let triggerCenter = $('#trigger-center').offset().top;
@@ -715,8 +721,14 @@
     //====start animation scroll to====
     function animateScrollTo() {
         let window = $(window);
-
+        // data-aos-mirror="true"
         if(window.innerWidth > 1024) {
+            let element = document.querySelectorAll('.item');
+            element.forEach((el, i)=> {
+                if (el.getAttribute('data-aos-mirror'))
+                    el.setAttribute('data-aos-mirror', 'true');
+            })
+
             let HeaderTop = $('#header9-3').offset().top - 625;
             let service1Top = $('#trigger-services-left').offset().top+200;
             let service2Top = $('#trigger-services-right').offset().top + 500;
