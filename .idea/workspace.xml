@@ -65,8 +65,13 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="655" column="67" selection-start-line="655" selection-start-column="67" selection-end-line="655" selection-end-column="67" />
+            <state relative-caret-position="429">
+              <caret line="875" column="49" selection-start-line="875" selection-start-column="49" selection-end-line="875" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#13;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,6 +112,9 @@
       <find>consol</find>
       <find>stackDiv1</find>
       <find>followTo</find>
+      <find>item</find>
+      <find>animateScrollTo</find>
+      <find>window</find>
     </findStrings>
     <replaceStrings>
       <replace>img src=&quot;</replace>
@@ -283,7 +291,7 @@
       <workItem from="1580324565454" duration="10635000" />
       <workItem from="1580433955979" duration="183000" />
       <workItem from="1580434278393" duration="112640000" />
-      <workItem from="1581163946485" duration="13958000" />
+      <workItem from="1581163946485" duration="34608000" />
     </task>
     <task id="LOCAL-00001" summary="added npm start">
       <created>1581194297605</created>
@@ -299,15 +307,49 @@
       <option name="project" value="LOCAL" />
       <updated>1581455400591</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added npm">
+      <created>1581460508006</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581460508006</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added npm">
+      <created>1581465300562</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581465300562</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added npm">
+      <created>1581465455721</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581465455721</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added npm">
+      <created>1581526061975</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581526061975</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added npm">
+      <created>1581527426763</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581527426763</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137416000" />
+    <option name="totallyTimeSpent" value="158066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49834985" visible="true" weight="0.17313915" />
       <window_info anchor="bottom" id="TODO" order="12" />
@@ -394,6 +436,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
           <caret line="132" column="43" selection-start-line="132" selection-start-column="43" selection-end-line="132" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#13;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -429,6 +476,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#13;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -579,8 +631,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="655" column="67" selection-start-line="655" selection-start-column="67" selection-end-line="655" selection-end-column="67" />
+        <state relative-caret-position="429">
+          <caret line="875" column="49" selection-start-line="875" selection-start-column="49" selection-end-line="875" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#13;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
