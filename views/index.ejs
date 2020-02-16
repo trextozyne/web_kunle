@@ -772,10 +772,9 @@
     });
 
     window.onresize = function (event) {
-        setInterval(()=>{
-            applyOrientation();
-            animateScrollTo()
-        }, 300)
+        applyOrientation();
+        animateScrollTo();
+        alert("done")
     };
 
     function applyOrientation() {debugger;
