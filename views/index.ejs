@@ -772,9 +772,12 @@
     });
 
     window.onresize = function (event) {
+        debugger;
+        let html = document.documentElement.innerHTML;
+        document.documentElement.innerHTML = html;
+        // alert(html)
         applyOrientation();
-        animateScrollTo();
-        alert("done")
+        animateScrollTo()
     };
 
     function applyOrientation() {debugger;

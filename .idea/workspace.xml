@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6bb1b33-3ecc-459a-80af-83ef201ac343" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,8 +65,8 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="776" column="29" selection-start-line="776" selection-start-column="29" selection-end-line="776" selection-end-column="29" />
+            <state relative-caret-position="347">
+              <caret line="781" column="19" lean-forward="true" selection-start-line="780" selection-start-column="19" selection-end-line="781" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -91,7 +92,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
+      <find>img src=&quot;assets/</find>
       <find>/assets/</find>
       <find>assets/</find>
       <find>bg7.jpg</find>
@@ -107,11 +108,11 @@
       <find>stackDiv1</find>
       <find>followTo</find>
       <find>item</find>
-      <find>animateScrollTo</find>
       <find>window</find>
+      <find>animateScrollTo</find>
     </findStrings>
     <replaceStrings>
-      <replace />
+      <replace>img src=&quot;</replace>
       <replace>/</replace>
       <replace>1500ms</replace>
       <replace>750</replace>
@@ -286,7 +287,7 @@
       <workItem from="1580433955979" duration="183000" />
       <workItem from="1580434278393" duration="112640000" />
       <workItem from="1581163946485" duration="34608000" />
-      <workItem from="1581797178160" duration="814000" />
+      <workItem from="1581797178160" duration="2975000" />
     </task>
     <task id="LOCAL-00001" summary="added npm start">
       <created>1581194297605</created>
@@ -337,11 +338,25 @@
       <option name="project" value="LOCAL" />
       <updated>1581527426763</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added npm">
+      <created>1581882089787</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581882089821</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added npm">
+      <created>1581886177042</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581886177042</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158880000" />
+    <option name="totallyTimeSpent" value="161041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="744" extended-state="6" />
@@ -666,8 +681,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="776" column="29" selection-start-line="776" selection-start-column="29" selection-end-line="776" selection-end-column="29" />
+        <state relative-caret-position="347">
+          <caret line="781" column="19" lean-forward="true" selection-start-line="780" selection-start-column="19" selection-end-line="781" selection-end-column="19" />
         </state>
       </provider>
     </entry>
