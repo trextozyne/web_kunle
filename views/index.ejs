@@ -771,9 +771,15 @@
         // console.dir(detail);
     });
 
-    window.addEventListener('resize', function () {
-        location.reload();
-    })
+    (function () {
+        var width = window.innerWidth;
+
+        window.addEventListener('resize', function () {
+            if (window.innerWidth !== width) {
+                window.location.reload(true);
+            }
+        });
+    })();
 
     function applyOrientation() {debugger;
         if (window.innerHeight < window.innerWidth) {//landscape
