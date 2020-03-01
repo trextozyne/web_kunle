@@ -768,17 +768,12 @@
     });
 
     document.addEventListener('aos:in', ({ detail }) => {
-        console.dir(detail);
+        // console.dir(detail);
     });
 
-    window.onresize = function (event) {
-        debugger;
-        let html = document.documentElement.innerHTML;
-        document.documentElement.innerHTML = html;
-        // alert(html)
-        applyOrientation();
-        animateScrollTo()
-    };
+    window.addEventListener('resize', function () {
+        location.reload();
+    })
 
     function applyOrientation() {debugger;
         if (window.innerHeight < window.innerWidth) {//landscape
@@ -884,6 +879,7 @@
     }
 
     animateScrollTo();
+    applyOrientation()
 
     var mouse_position;
     var animating = false;
